@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family:Roboto_light;
+    src: url(/Fonts/Roboto-Light_0.ttf) format('truetype');
+   
+}
+@font-face {
+    font-family:Roboto Regular;
+    src: url(/Fonts/Roboto-Regular_0.ttf) format('truetype');
+    
+
+}
+@font-face {
+    font-family:helvetic regular;
+    src: url(/Fonts/ps.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Helvetic";
+    src: url(/Fonts/HelveticaUltraLt_0.ttf) format('truetype');
+    
+}
+html,body{
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.conteiner{
+    width: 98,9vw;
+    height: 100vh;
+    background-image: url(../imagens/index-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu{
+    width: 100%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    justify-items: center;
+    align-items: center;
+
+}
+.menu > img{
+    position: relative;
+    left: 70px;
+}
+.set_input > ul li, a{
+    font-family:Roboto_light;
+    position: relative;
+    right: 20px;
+    padding-left: 9px;
+    color: white;
+    float: left;
+    margin-left: 5px;
+    text-decoration: none; 
+}
+.set_input > ul li, a:focus{
+    
+    text-decoration:underline;
+    color: white; 
+    text-underline-offset: 0.5rem;
+}
+.set_input{
+    margin-right: 60px;
+}
+
+
+.text_center{
+    width: 50%;
+    height: max-content;
+    margin: 50px 220px;
+}
+.text_center > h2{
+    font-size: 40px;
+    font-family: Helvetic;
+    color: white; 
+    margin-bottom: 10px;
+    font-weight:100;
+    
+}
+.text_center > h2:nth-child(1){
+
+    font-size: 93px;
+}
+.conteiner_cadastro{
+    width: 98,9vw;
+    height: 100vh;
+    background-color:#29abe2 ;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.conteiner_cadastro > span{
+    font-size: 50px;
+    color: white;
+    font-weight: lighter;
+    font-family: Helvetic;
+    margin: 60px 0px;
+    
+}
+.info_cadastro{
+    width: 620px;
+    height: 90%;
+    position: relative;
+    bottom: 100px;
+    display: grid;
+    justify-content: start;
+    bottom: 50px;
+    align-items: start;
+    
+}
+.info_cadastro > form {
+    display: grid;
+}
+.info_cadastro form > input{
+    width: 185%;
+    background-color: transparent;
+    font-family:Roboto Regular;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: transparent ;
+    color: white;
+    margin: 10px 0px;
+    font-size: 15px;
+}
+.info_cadastro form > input:focus,
+.info_cadastro form > input:valid{
+    background-color: transparent; 
+}
+.info_cadastro form > label{
+    font-family:Roboto Regular;
+    color: white;
+    position: relative;
+    text-align: start;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+.info_cadastro form > input[type="submit"]{
+    background-color: #012d51;
+    font-family: Helvetic;
+    padding: 7px 30px;
+    position: relative ;
+    align-items: center;
+    width: max-content;
+    font-size: 50px;
+    cursor: pointer;
+    margin: 60px 0px;
+    left: 150px;
+    color: #29abe2;
+    border: none;
+}
+.conteiner_form{
+    width: 99,8;
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    
+}
+.conteiner_form  h2{
+    font-family: Helvetic;
+    font-size: 50px;
+    font-weight: 100;
+    color: #29abe2;
+  
+    
+}
+.form_center{
+    width: 65%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+}
+.table-container {
+    width: 600px;
+   
+}
+
+.table {
+    margin-top:  80px;
+    border-collapse: collapse;
+    
+}
+.table th, .table td {
+    border: 1px solid #29abe2;
+    padding: 12px 25px;
+    text-align: left;
+    
+}
+    
+.table thead tr td{
+    text-align: center;
+}
+ .table td {
+    
+    text-align: left;
+    border: none;
+}
+.table td tr {
+   
+    text-align: left;
+}
+
+.table tr:not(:last-child) td {
+        border-bottom: 1px solid #29abe2;
+}
+
+.table td:not(:first-child) {
+        border-left: 1px solid #29abe2;
+}
+.table tr td:nth-child(1){
+        font-family: Roboto_light;
+        color: #012d51;
+        padding: 12px 35px;
+}
+.table tr:nth-child(1){
+        font-family: Roboto Regular;
+        color: #012d51;
+        font-weight:bold;
+}
+.table tr:nth-child(2) > :not(:nth-child(1)){
+    font-family: Helvetic;
+    font-weight: bold;
+    color:#808080;
+}
+.rodape{
+    width: 98,9vw;
+    height: 35vh;
+    background-color: #29abe2;
+    background-image: url(/imagens/rodape-desktop.jpg);
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+}   
+.text_rodape{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.text_rodape ul{
+    
+    list-style: none;
+}
+.text_rodape ul li{
+    margin: 15px;
+    font-family:Roboto_light;
+}
+#userTable{
+    display: none;
+}
+
+/* Mobile */ 
+
+.mobile-menu{
+    display: none;
+    width: 220px;
+    height: 50%;
+   
+    
+}
+.mobile-menu > svg{
+    
+    width: 28px;
+    height: 40px;
+    cursor: pointer;
+    grid-area: svg_img2;
+}
+.mobile-menu-select{
+    display: none;
+}
+.button-home > a >img{
+    
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: 70vw;
+    
+}
+/*Designer desktop */ 
+@media  screen and (max-width: 1100px){
+        
+        .menu{
+           overflow: hidden;
+        }
+        .menu > img{
+            order: 2;
+           
+            margin-left: 60vw;
+        }
+        .text_center{
+            width: max-content;
+            margin: 150px 210px;
+        }
+        .text_center h2{
+            font-size:33px;
+            margin-right: 8vw;
+        }
+        .text_center h2:nth-last-child(2){
+            font-size: 76px;
+            margin-right: 8vw;
+        }
+        .mobile-menu-select > .set_input ul{
+            display: flex;
+            flex-direction: column;
+            text-align: left; 
+           
+        }
+        .menu > .set_input{
+            display: none;
+        }
+        .mobile-menu{
+            position: relative;
+            width: 150px;
+            height: 50px;
+            display: block;
+            margin: -80px 25px;
+            z-index: 0;
+        }
+        .mobile-menu-select  .set_input{
+            display:block;
+            
+        }
+        .mobile-menu > svg{
+            margin-left: 20px;
+        }
+        .open{ 
+            position: relative;
+            bottom: 80px;
+            right: 25px;
+            width: 250px;
+            height: 235px;
+            display: block;
+            background-color: #29abe2;
+            padding: 15px;
+            z-index: -1;
+        }
+        .open ul{
+            margin: 100px 40px;
+        }
+        .open ul li{
+            margin-bottom:15px ;
+        }
+      
+}
+/* Designer Mobile */ 
+@media  screen and (max-width: 700px){
+    .menu > svg{
+       margin-left: 10vw;
+       background-size: 100%;
+      
+      
+    }
+    .conteiner {
+        width: 98,9vw;
+        height: 100vh;
+        background-image: url(/imagens/index-image-mobile.jpg);
+      
+    }
+    .text_center{
+        width: max-content;
+        
+        margin-left: 10vw;
+    }
+    .conteiner_cadastro {
+        width: 95,99vw;
+        
+    }
+    .info_cadastro form input{
+        width: 70vw;
+        
+    }
+
+    .info_cadastro form input,label{
+        margin-left: 15vw;
+        
+       
+    } 
+   
+    .form_center > h2{
+        position: relative;
+        bottom: 75px;
+        width: 220px;
+        margin: 0 auto;
+        align-items: center;
+        
+    }
+    .table td{
+        padding: 5px;
+    }
+    .table{
+        display: none;
+        
+    }
+    #userTable{
+       
+        display:grid;
+        width: 490px;
+        align-items: center;
+        height: 230px;
+        
+        position: relative;
+        bottom: 60px;
+       
+    }
+    
+    table > tbody{
+       
+        display: grid;
+        position:relative;
+        max-width: 500px;
+        height: 280px;
+        border: 3px solid #29abe2;
+        text-align: start;
+        
+
+    }
+ table > thead, tbody{
+    position: relative;
+    border-collapse: collapse;
+    
+    
+ }
+ 
+    table > tbody tr td{
+        position: relative;
+        border-bottom: 2px solid #29abe2;
+        position:relative;
+        width: 230px;
+        padding-bottom: 7px;
+        
+       
+    }
+    table > tbody tr td:nth-child(1){ 
+        font-size: 20px;
+        color: #012d51;
+        font-family:Roboto Regular ;
+        
+        
+    }
+    table > tbody tr td:nth-child(2){ 
+        
+    position: relative;
+    right: 130px;
+    color: #808080;
+    font-family:helvetic regular ;
+    font-size: 20px;
+    }
+
+    table > tbody tr {
+    width: max-content;
+    height: max-content;
+    
+    bottom: 2px;
+    position: relative;
+    left: 20px;
+    align-items: center;
+    }
+    table > tbody tr:nth-child(1){
+    margin-top: 20px;
+   
+    }
+    table > tbody tr:nth-child(2), table > tbody tr:nth-child(3), table > tbody tr:nth-child(4){
+        bottom: 10px;
+       
+    }
+    table > tbody tr:nth-child(4){
+       margin-bottom: 10px;
+       
+        }
+   table .bnt-tab{
+    
+    cursor: pointer;
+    width: 118px;
+    height: 50px;
+    right: 10px;
+    top: 2px;
+    position: relative;
+    border:3px solid #4a4a4abb;
+    background-color: white;
+    border-collapse: collapses;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: Roboto_light;
+   }
+   .bnt-tab:focus{
+    border: 3px solid #29abe2;
+    
+
+   }
+  .rodape{
+    width: 97,9vw;
+    height: 350px;
+    background-image: url(/imagens/rodape-mobile.jpg);
+  }
+  .rodape > .text_rodape{
+    width: 100%;
+    font-size: 30px;
+  }
+  .button-home > a >img{
+    display: none;
+  }
+   
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>IN8Dev</title>
+</head>
+<body>
+   
+        <div class="conteiner" id="home"> 
+            <nav class="menu">
+         
+            <img src="/logo-in8-dev.svg" alt="Logo" width="150">
+       
+            <div class="set_input"> 
+                <ul>
+                    <li class="nav-item" style="list-style: none;"><a href="#cadastro">cadastro</a></li>
+                    <li class="nav-item"><a  href="#lista">lista</a></li>   
+                    <li class="nav-item"><a href="#Sobre">sobre mim</a></li>
+            <ul></ul>
+        </div>
+        </nav><!--Menu --->
+
+
+        <div class="mobile-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" onclick="MenuShow()" viewBox="0 0 82 70" class="icon" ><defs><style>.cls-1{fill:#29abe2;}</style></defs><title>hamburguer0</title><g id="Camada_2" data-name="Camada 2"><g id="Camada_1-2" data-name="Camada 1"><path class="cls-1" d="M77,10H5A5,5,0,0,1,5,0H77a5,5,0,0,1,0,10Z"/><path class="cls-1" d="M77,40H5A5,5,0,0,1,5,30H77a5,5,0,0,1,0,10Z"/><path class="cls-1" d="M77,70H5A5,5,0,0,1,5,60H77a5,5,0,0,1,0,10Z"/></g></g></svg>
+
+          <div class="mobile-menu-select">
+            <div class="set_input"> 
+                <ul>
+                    <li class="nav-item" style="list-style: none;" href="#lista"><a href="#lista">Lista</a></li>
+                    <li class="nav-item" style="list-style: none; " href="#Sobre"><a href="#Sobre">Sobre mim</a></li>   
+                    <li class="nav-item" style="list-style: none;" href="#cadastro"><a href="#cadastro">Cadastro</a></li>
+           </ul>
+        </div>
+          
+        </div><!---Menu mobile--->
+       
+
+
+
+
+        </div><!---Menu--->
+        <div class="text_center">
+        <h2>ESTÁGIO</h2>
+        <h2>PROVA DE SELEÇÃO</h2>
+        </div><!--Texto central--->
+        
+    </div> <!-- Conteiner----> 
+    <div class="conteiner_cadastro" id="cadastro">
+        <span> CADASTRO</span> 
+        <div class="info_cadastro">
+            <form action="" method="post">
+                <label for="text">Nome</label>
+                <input type="text" id="text" name="text">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+
+                <label for="date">Nascimento</label>
+                <input type="date" name="data" id="date">
+
+                <label for="tel">Telefone</label>
+                <input type="tel" name="telefone" id="tel">
+                
+                <input type="submit" value="CADASTRAR">
+        </form>
+        </div><!--Informações de cadastro--->
+    </div><!---Campo de cadastro--->
+    <div class="conteiner_form" id="lista" >
+        <div class="form_center"  >
+                <h2>LISTA DE CADASTRO</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td >NOME</td>
+                        <td >E-MAIL </td>
+                        <td >NASCIMENTO</td>
+                        <td >TELEFONE</td>
+                    </tr>
+                    <tr >
+                        <td>1</td>
+                        <td>Fulano Deutrano da Silva </td>
+                        <td>Fuladon@gmail.com</td>
+                        <td>13/12/2022 </td>
+                        <td>(31) 99666-1111</td>
+                    </tr>
+       
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td> 
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td></td>
+                        <td></td> 
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            <!-- Tabela mobile---->
+            <table id="userTable" >
+                <thead>
+                    <tr>
+                        
+                        <th ><button class="bnt-tab">1</button></th>
+                        <th><button class="bnt-tab">2</button></th>
+                        <th><button class="bnt-tab">3</button></th>
+                        <th><button class="bnt-tab">4</button></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr >
+                        <td>NOME</td>
+                        <td  id="user1">Fulano</td>
+                    </tr>
+                    <tr>
+                        <td >E-MAIL</td>
+                        <td id="email1">fulano@example.com</td>
+                    
+                    <tr>
+                        <td  >NASC.</td>
+                        <td  id="birth1">01/01/1990</td>
+                    </tr>
+                    <tr>
+                        <td>TEL.</td>
+                        <td  id="phone1">(31) 99999-1111</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="button-home">
+                <a href="#home"><img src="/icones/topo-pag.svg"></a>
+            </div><!---Botao de home --->
+            <!---Fim tabela mobile--->
+
+
+        </div><!---formulario central--->
+    </div><!---Formulario--->
+    <div class="rodape" id="Sobre">
+        <div class="text_rodape">
+        <ul  >
+            <li><p>Fulado deltrano de Oliveira </p></li>
+            <li><p>fuladodo@gmail.com </p></li>
+            <li><p>(31) 99666-1111</p></li>
+            <li><p>Faculdade da belo Horizonte </p></li>
+        </ul>
+        </div><!---Texto do rodape--->
+    </div><!---Botttom --->
+    <script>
+        function MenuShow(){
+            let MenuShow = document.querySelector('.mobile-menu-select');
+            if(MenuShow.classList.contains('open')){
+                MenuShow.classList.remove('open');
+                document.querySelector('.icon').innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 70"><defs><style>.cls-1{fill:#29abe2;}</style></defs><title>hamburguer0</title><g id="Camada_2" data-name="Camada 2"><g id="Camada_1-2" data-name="Camada 1"><path class="cls-1" d="M77,10H5A5,5,0,0,1,5,0H77a5,5,0,0,1,0,10Z"/><path class="cls-1" d="M77,40H5A5,5,0,0,1,5,30H77a5,5,0,0,1,0,10Z"/><path class="cls-1" d="M77,70H5A5,5,0,0,1,5,60H77a5,5,0,0,1,0,10Z"/></g></g></svg>';
+            }else{
+                MenuShow.classList.add('open');
+                document.querySelector('.icon').innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 70"><defs><style>.cls-1{fill:#fff;}</style></defs><title>hamburguer-aberto0</title><g id="Camada_2" data-name="Camada 2"><g id="Camada_1-2" data-name="Camada 1"><path class="cls-1" d="M77,10H5A5,5,0,0,1,5,0H77a5,5,0,0,1,0,10Z"/><path class="cls-1" d="M77,40H5A5,5,0,0,1,5,30H77a5,5,0,0,1,0,10Z"/><path class="cls-1" d="M77,70H5A5,5,0,0,1,5,60H77a5,5,0,0,1,0,10Z"/></g></g></svg>';
+            }
+            
+        } 
+        const cells = document.querySelectorAll('.bnt-tab');
+    const userInfo = [
+        { name: 'Fulano deltrano da slva', email: 'fulano@example.com', birth: '01/01/1990', phone: '(31) 99999-1111' },
+        { name: 'Tiago deltrano da slva ', email: 'Tiago@example.com', birth: '02/01/1990', phone: '(11) 88888-2222' },
+        { name: 'Beltrano deltrano da slva', email: 'beltrano@example.com', birth: '03/01/1990', phone: '(11) 77777-3333' },
+        { name: 'João deltrano da slva', email: 'joao@example.com', birth: '04/01/1990', phone: '(11) 66666-4444' }
+    ];
+
+    cells.forEach((cell, index) => {
+        cell.addEventListener('click', () => {
+            const user = userInfo[index];
+            document.getElementById('user1').textContent = user.name;
+            document.getElementById('email1').textContent = user.email;
+            document.getElementById('birth1').textContent = user.birth;
+            document.getElementById('phone1').textContent = user.phone;
+        });
+    });
+    </script>
+    
+</body>
+</html>
